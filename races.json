@@ -1,0 +1,658 @@
+{
+  "races": [
+    {
+      "id": "anasi",
+      "nom": "Anasi",
+      "santé": 12,
+      "chakra": 8,
+      "barrière": 0,
+      "vitesse": [4, 3],
+      "capacités": {
+        "base": ["repos"],
+        "race": {
+          "magie innée": ["magie anasi"]
+        }
+      },
+      "capacité_mode_hyper": ["toile suprême"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["arcane", "nécromancie", "ombre"]
+    },
+    {
+      "id": "drakos",
+      "nom": "Drakos",
+      "santé": 13,
+      "chakra": 10,
+      "barrière": 0,
+      "vitesse": [4, 3],
+      "capacités": {
+        "base": ["méditation"],
+        "race": {
+          "écailles draconiques": ["écailles draconiques"]
+        }
+      },
+      "capacité_mode_hyper": ["écailles absorbantes"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["toutes"]
+    },
+    {
+      "id": "drassah_thac",
+      "nom": "Drassah'thac",
+      "santé": 9,
+      "chakra": 9,
+      "barrière": 0,
+      "vitesse": [5, 5],
+      "capacités": {
+        "base": ["méditation"],
+        "race": {
+          "drassah'thac est": ["félin puissant"],
+          "drassah'thac ouest": ["félin solide"],
+          "drassah'thac nord": ["félin adapté"],
+          "drassah'thac sud": ["félin rapide"],
+          "drassah'thac centre": ["félin social"]
+        }
+      },
+      "capacité_mode_hyper": ["Super chance"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["toutes"]
+    },
+    {
+      "id": "elfe_argente",
+      "nom": "Elfe Argenté",
+      "santé": 3,
+      "chakra": 14,
+      "barrière": 0,
+      "vitesse": [5, 4],
+      "capacités": {
+        "base": ["méditation"],
+        "race": {
+          "territoires des elfes argentés": ["territoire des elfes argentés"],
+          "barrage argenté": ["barrage argenté"],
+          "ailleurs": ["elfe argenté d'ailleurs"]
+        }
+      },
+      "capacité_mode_hyper": ["souplesse elfique"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 2],
+        "intelligence": [3, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["toutes"]
+    },
+    {
+      "id": "elfe_dore",
+      "nom": "Elfe Doré",
+      "santé": 4,
+      "chakra": 13,
+      "barrière": 3,
+      "vitesse": [5, 4],
+      "capacités": {
+        "base": ["méditation"],
+        "race": {
+          "sang doré": ["sang doré"]
+        }
+      },
+      "capacité_mode_hyper": ["sang altérant"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["toutes"]
+    },
+    {
+      "id": "elfe_forestier",
+      "nom": "Elfe Forestier",
+      "santé": 7,
+      "chakra": 13,
+      "barrière": 0,
+      "vitesse": [5, 5],
+      "capacités": {
+        "base": ["méditation"],
+        "race": {
+          "territoires des elfes forestiers": ["Elfe des bois"],
+          "urbain": ["Elfe forestier urbain"]
+        }
+      },
+      "capacité_mode_hyper": ["souplesse elfique"],
+      "stats": {
+        "agilité": [3, 5],
+        "force": [1, 3],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["toutes"]
+    },
+    {
+      "id": "elfe_noir",
+      "nom": "Elfe Noir",
+      "santé": 8,
+      "chakra": 12,
+      "barrière": 0,
+      "vitesse": [5, 5],
+      "capacités": {
+        "base": ["méditation"],
+        "race": {
+          "elfe charbon": ["sang corrompu"],
+          "elfe salé": ["sang purifié"]
+        }
+      },
+      "capacité_mode_hyper": ["sang du condamné"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["toutes"]
+    },
+    {
+      "id": "farfadet",
+      "nom": "Farfadet",
+      "santé": 4,
+      "chakra": 14,
+      "barrière": 2,
+      "vitesse": [4, 2],
+      "capacités": {
+        "base": ["méditation"],
+        "race": {
+          "farfadet médiant": ["farfadet médiant"],
+          "farfadet maritime": ["farfadet maritime"],
+          "farfadet amazone": ["farfadet amazone"],
+          "farfadet alpin": ["farfadet alpin"]
+        }
+      },
+      "capacité_mode_hyper": ["mémoire infinie"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 3],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["toutes"]
+    },
+    {
+      "id": "felfe",
+      "nom": "Felfe",
+      "santé": 2,
+      "chakra": 13,
+      "barrière": 5,
+      "vitesse": [5, 3],
+      "capacités": {
+        "base": ["méditation"],
+        "race": {
+          "felfe forestier": ["sang féerique forêt"],
+          "felfe noir": ["sang féerique corrompu"],
+          "felfe argenté": ["sang féerique brillant"]
+        }
+      },
+      "capacité_mode_hyper": ["surpuissance magique"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 2],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["toutes"]
+    },
+    {
+      "id": "fenrir",
+      "nom": "Fenrir",
+      "santé": 13,
+      "chakra": 7,
+      "barrière": 0,
+      "vitesse": [5, 4],
+      "capacités": {
+        "base": ["repos"],
+        "race": {
+          "magie innée": ["magie fenrir"]
+        }
+      },
+      "capacité_mode_hyper": ["truffe ultime"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["foudre", "glace", "ombre"]
+    },
+    {
+      "id": "hujin",
+      "nom": "Hujin",
+      "santé": 10,
+      "chakra": 10,
+      "barrière": 0,
+      "vitesse": [4, 4],
+      "capacités": {
+        "base": ["méditation"],
+        "race": {
+          "élasticité": ["élasticité"]
+        }
+      },
+      "capacité_mode_hyper": ["gomme à mâcher"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["toutes"]
+    },
+    {
+      "id": "humain",
+      "nom": "Humain",
+      "santé": 10,
+      "chakra": 10,
+      "barrière": 0,
+      "vitesse": [4, 4],
+      "capacités": {
+        "base": ["méditation"],
+        "race": {
+          "humain central": ["adaptation humaine"],
+          "humain désertique": ["homme du désert"],
+          "humain tropical": ["tempête sage"],
+          "humain toundra": ["homme blizzard"]
+        }
+      },
+      "capacité_mode_hyper": ["adrénaline"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["toutes"]
+    },
+    {
+      "id": "jackalope",
+      "nom": "Jackalope",
+      "santé": 5,
+      "chakra": 12,
+      "barrière": 3,
+      "vitesse": [6, 2],
+      "capacités": {
+        "base": ["repos"],
+        "race": {
+          "magie innée": ["magie jackalope"]
+        }
+      },
+      "capacité_mode_hyper": ["aisance"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 3]
+      },
+      "magie_innée_autorisée": ["toutes"]
+    },
+    {
+      "id": "kitsune",
+      "nom": "Kitsune",
+      "santé": 8,
+      "chakra": 12,
+      "barrière": 0,
+      "vitesse": [5, 3],
+      "capacités": {
+        "base": ["repos"],
+        "race": {
+          "magie innée": ["magie kitsune"]
+        }
+      },
+      "capacité_mode_hyper": ["prioritaire"],
+      "stats": {
+        "agilité": [2, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["feu", "lumière", "vent"]
+    },
+    {
+      "id": "lamia",
+      "nom": "Lamia",
+      "santé": 12,
+      "chakra": 8,
+      "barrière": 0,
+      "vitesse": [4, 4],
+      "capacités": {
+        "base": ["méditation"],
+        "race": {
+          "écaille solide": ["écaille solide"]
+        }
+      },
+      "capacité_mode_hyper": ["jet de venin"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 3],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["toutes"]
+    },
+    {
+      "id": "majin",
+      "nom": "Majin",
+      "santé": 8,
+      "chakra": 10,
+      "barrière": 0,
+      "vitesse": [4, 4],
+      "capacités": {
+        "base": ["méditation"],
+        "race": {
+          "renfermement": ["renfermement"]
+        }
+      },
+      "capacité_mode_hyper": ["grande élasticité"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 3]
+      },
+      "magie_innée_autorisée": ["toutes"]
+    },
+    {
+      "id": "marcass",
+      "nom": "Marcass",
+      "santé": 12,
+      "chakra": 3,
+      "barrière": 5,
+      "vitesse": [4, 4],
+      "capacités": {
+        "base": ["repos"],
+        "race": {
+          "magie innée": ["magie marcass"]
+        }
+      },
+      "capacité_mode_hyper": ["corps isolant"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [2, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": [],
+      "magie_non_autorisée": ["feu", "nécromancie", "terre"]
+    },
+    {
+      "id": "medusain",
+      "nom": "Médusain",
+      "santé": 3,
+      "chakra": 10,
+      "barrière": 7,
+      "vitesse": [4, 8],
+      "capacités": {
+        "base": ["repos"],
+        "race": {
+          "magie innée": ["magie médusain"]
+        }
+      },
+      "capacité_mode_hyper": ["méga tentacule"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 3],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["eau", "foudre", "lumière"]
+    },
+    {
+      "id": "minotaure",
+      "nom": "Minotaure",
+      "santé": 20,
+      "chakra": 1,
+      "barrière": 0,
+      "vitesse": [5, 3],
+      "capacités": {
+        "base": ["repos"],
+        "race": {
+          "magie innée": ["magie minotaure"]
+        }
+      },
+      "capacité_mode_hyper": ["mégacorne"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [3, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["ombre", "sang", "terre"]
+    },
+    {
+      "id": "mort_vivant",
+      "nom": "Mort-vivant",
+      "santé": 12,
+      "chakra": 10,
+      "barrière": 0,
+      "vitesse": [4, 4],
+      "capacités": {
+        "base": ["méditation"],
+        "race": {
+          "mort par saignement ou dans le sang": ["mort sang"],
+          "mort par brisement d'os ou par empoisonnement": ["mort nécromancie"],
+          "mort par vieillissement accéléré ou proche d'une faille spatio-temporelle": ["mort espace/temps"],
+          "mort dans le néant ou par folie": ["mort vide"],
+          "mort brûlé ou dans le désert": ["mort feu"],
+          "mort de froid ou dans la neige": ["mort glace"],
+          "mort noyé ou dans l'eau": ["mort eau"],
+          "mort électrocuté ou dans un orage": ["mort foudre"],
+          "mort en altitude ou sourd": ["mort vent"],
+          "mort enterré vivant ou pétrifié": ["mort terre"],
+          "mort au soleil ou aveuglé": ["mort lumière"],
+          "mort à la lune ou par trahison": ["mort ombre"]
+        }
+      },
+      "capacité_mode_hyper": ["super santé"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [4, 4],
+        "social": [1, 1],
+        "volonté": [4, 4]
+      },
+      "magie_innée_autorisée": ["toutes"]
+    },
+    {
+      "id": "nain",
+      "nom": "Nain",
+      "santé": 16,
+      "chakra": 4,
+      "barrière": 0,
+      "vitesse": [3, 3],
+      "capacités": {
+        "base": ["méditation"],
+        "race": {
+          "londolor est": ["londolore est"],
+          "londolore ouest": ["londolore ouest"],
+          "londolore centre": ["londolore centre"]
+        }
+      },
+      "capacité_mode_hyper": ["petit mais costaud"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["arcane", "feu", "foudre", "potentiel illimité", "terre"]
+    },
+    {
+      "id": "namazus",
+      "nom": "Namazus",
+      "santé": 12,
+      "chakra": 8,
+      "barrière": 0,
+      "vitesse": [4, 8],
+      "capacités": {
+        "base": ["repos"],
+        "race": {
+          "magie innée": ["magie namazus"]
+        }
+      },
+      "capacité_mode_hyper": ["cuir marin"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["eau", "ombre", "sang"]
+    },
+    {
+      "id": "olwan",
+      "nom": "Olwan",
+      "santé": 8,
+      "chakra": 12,
+      "barrière": 0,
+      "vitesse": [6, 0],
+      "capacités": {
+        "base": ["repos"],
+        "race": {
+          "magie innée": ["magie olwan"]
+        }
+      },
+      "capacité_mode_hyper": ["super vitesse"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["ombre", "temps/espace", "vent"]
+    },
+    {
+      "id": "orios",
+      "nom": "Orios",
+      "santé": 20,
+      "chakra": 1,
+      "barrière": 0,
+      "vitesse": [4, 5],
+      "capacités": {
+        "base": ["repos"],
+        "race": {
+          "magie innée": ["magie orios"]
+        }
+      },
+      "capacité_mode_hyper": ["force de l'ours"],
+      "stats": {
+        "agilité": [1, 3],
+        "force": [3, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["eau", "sang", "terre"]
+    },
+    {
+      "id": "satyre",
+      "nom": "Satyre",
+      "santé": 11,
+      "chakra": 9,
+      "barrière": 0,
+      "vitesse": [5, 4],
+      "capacités": {
+        "base": ["repos"],
+        "race": {
+          "magie innée": ["magie satyre"]
+        }
+      },
+      "capacité_mode_hyper": ["poudre de bauc"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["feu", "foudre", "terre"]
+    },
+    {
+      "id": "rokhs",
+      "nom": "Rokhs",
+      "santé": 9,
+      "chakra": 11,
+      "barrière": 0,
+      "vitesse": [6, 0],
+      "capacités": {
+        "base": ["repos"],
+        "race": {
+          "magie innée": ["magie rokhs"]
+        }
+      },
+      "capacité_mode_hyper": ["colère du ciel"],
+      "stats": {
+        "agilité": [1, 5],
+        "force": [1, 5],
+        "intelligence": [1, 5],
+        "perception": [1, 5],
+        "social": [1, 5],
+        "volonté": [1, 5]
+      },
+      "magie_innée_autorisée": ["foudre", "lumière", "vent"]
+    }
+  ]
+}
